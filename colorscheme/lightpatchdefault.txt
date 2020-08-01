@@ -1,0 +1,25 @@
+{
+  "name": "",
+  "author": "",
+  "color": [
+    "#28211C",
+    "#cc0403",
+    "#19cb00",
+    "#cecb00",
+    "#001cd1",
+    "#cb1ed1",
+    "#0dcdcd",
+    "#e5e5e5",
+    "#28211C",
+    "#cc0403",
+    "#19cb00",
+    "#cecb00",
+    "#001cd1",
+    "#cb1ed1",
+    "#0dcdcd",
+    "#e5e5e5"    
+  ],
+  "foreground": "#000000",
+  "background": "#E5E5E5"
+}
+
