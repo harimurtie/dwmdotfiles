@@ -1,0 +1,4 @@
+#!/bin/bash
+SONG="$(mpc current)"
+ICON_PATH=~/.icons/custom/music.png
+notify-send "Now playing:" "$SONG" -i $ICON_PATH
