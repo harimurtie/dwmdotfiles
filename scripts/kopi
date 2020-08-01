@@ -1,0 +1,5 @@
+#!/bin/bash
+#clipmenu -i -l 10 -x 200 -w 1000 -y 270
+clipmenu -i -l 10 -x 200 -w 1000
+#clipmenu -i -fn Terminus:size=8 -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#93a1a1' -x 200 -w 1000 -y 270
+

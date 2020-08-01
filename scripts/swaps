@@ -1,0 +1,2 @@
+#!/bin/bash
+free -h | awk '/Swap/ {print $2}'

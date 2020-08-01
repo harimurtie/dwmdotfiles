@@ -1,0 +1,7 @@
+#!/bin/bash
+#cd ~/Pictures/screenshots && scrot -d 10
+SCREENSHOTS_DIR=~/Pictures/screenshots
+TIMESTAMP="$(date +%Y.%m.%d-%H.%M.%S)"
+FILENAME=$SCREENSHOTS_DIR/$TIMESTAMP.screenshot.png
+PHOTO_ICON_PATH=~/.icons/custom/screenshot.png
+maim -d 10 -u -m 3 $FILENAME && convert $FILENAME \( +clone -background black -shadow 100x5+0+0 \) +swap -background none -layers merge +repage $FILENAME && convert $FILENAME -bordercolor white -border 2 $FILENAME && notify-send "Screenshot" -i $PHOTO_ICON_PATH

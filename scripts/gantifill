@@ -1,0 +1,2 @@
+#!/bin/bash
+feh --bg-max "$(ls /home/damez/Pictures/wal/* | dmenu -x 210 -w 950 -y 250 -i -l 10)"

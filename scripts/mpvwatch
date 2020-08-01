@@ -1,0 +1,4 @@
+#!/bin/bash
+if echo "$QUTE_URL" | grep -q 'youtube'; then
+        youtube-viewer --resolution=360p -A --quiet --no-video-info --no-interactive --no-get-captions --append-arg="--osc yes --force-window=immediate" --player "mpv" "$QUTE_URL"
+        fi

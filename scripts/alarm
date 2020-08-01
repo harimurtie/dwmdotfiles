@@ -1,0 +1,2 @@
+#!/bin/bash
+sleep 15m && mpg123 Music/mix/Lavie.mp3

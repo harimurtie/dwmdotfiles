@@ -1,0 +1,2 @@
+#!/bin/bash
+feh --bg-scale -Z "$(ls /home/damez/Pictures/wal/* | dmenu -i -l 10 -x 200 -w 950 -y 250)"

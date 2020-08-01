@@ -1,0 +1,3 @@
+#!/bin/bash
+#v4l2-ctl -d /dev/video0 --set-ctrl=exposure_auto=1 &&
+mpv --no-audio --window-scale=0.5 av://v4l2:/dev/video0 --vf=hflip &&

@@ -1,0 +1,2 @@
+#!/bin/bash
+conky -c ~/Documents/scripts/conkyrc-03.lua &

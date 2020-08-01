@@ -1,0 +1,8 @@
+#!/bin/bash
+dmenu="dmenu -p mpv $@"
+track=$(mpvc -i | tr "\t" "|" | $dmenu | cut -d "|" -f 1)
+if [[ ! -z $track  ]]; then
+        mpvc -J $track
+fi
+
+

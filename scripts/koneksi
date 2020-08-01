@@ -1,0 +1,2 @@
+#!/bin/bash
+networkmanager_dmenu -i -l 10 -x 350 -w 700 -y 250

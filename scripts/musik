@@ -1,0 +1,2 @@
+#!/bin/bash
+mpv --force-window ~/Music/lib/

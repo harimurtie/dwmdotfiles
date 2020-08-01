@@ -1,0 +1,2 @@
+#!/bin/bash
+cd ~/Videos/zzz/ && mpv "$(ls *mkv *mp4 *m3u | dmenu -i -b -l 20)"

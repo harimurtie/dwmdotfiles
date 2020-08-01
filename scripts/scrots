@@ -1,0 +1,7 @@
+#!/bin/bash
+#cd ~/Pictures/screenshots && scrot -d 10
+SCREENSHOTS_DIR=~/Pictures/screenshots
+TIMESTAMP="$(date +%Y.%m.%d-%H.%M.%S)"
+FILENAME=$SCREENSHOTS_DIR/$TIMESTAMP.screenshot.png
+PHOTO_ICON_PATH=~/.icons/custom/screenshot.png
+maim -d 10 -u -m 3 $FILENAME && postagestamp -d 10 -s 20 -b 15 -m center $FILENAME $FILENAME && notify-send "Screenshot" -i $PHOTO_ICON_PATH
