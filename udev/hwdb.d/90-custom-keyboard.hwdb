@@ -1,0 +1,5 @@
+evdev:atkbd:dmi:bvn*:bvr*:bd*:svnDell*:pnInspiron*3162:pvr*
+ KEYBOARD_KEY_c7=!home
+ KEYBOARD_KEY_cf=!end
+ KEYBOARD_KEY_c9=!pageup
+ KEYBOARD_KEY_d1=!pagedown
