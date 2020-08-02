@@ -17,7 +17,7 @@ PHOTO_ICON_PATH=~/.icons/custom/screenshot.png
 if [[ "$1" = "-s" ]]; then
     # Area/window selection.
     notify-send 'Select area to capture.' --urgency low -i $PHOTO_ICON_PATH
-    maim -u -m 3 -s $FILENAME && bordereffects -s 2 -d 5 -c 5 -g 1 -p 2 -b white $FILENAME $FILENAME    
+    maim -u -m 3 -s $FILENAME && bordereffects -s 2 -d 5 -c 5 -g 1 -p 2 -b white $FILENAME $FILENAME
 #    maim -u -m 3 -s $FILENAME && convert $FILENAME -bordercolor white -border 10 $FILENAME && convert $FILENAME \( +clone -background red -shadow 60x4+4+4 \) +swap -background none -layers merge +repage $FILENAME
     if [[ "$?" = "0" ]]; then
         notify-send "Screenshot" --urgency low -i $PHOTO_ICON_PATH

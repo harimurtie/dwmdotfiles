@@ -17,7 +17,7 @@ PHOTO_ICON_PATH=~/.icons/custom/screenshot.png
 if [[ "$1" = "-s" ]]; then
     # Area/window selection.
     notify-send 'Select area to capture.' --urgency low -i $PHOTO_ICON_PATH
-    maim -u -m 3 -s $FILENAME && convert $FILENAME -bordercolor white -border 10 $FILENAME && convert $FILENAME \( +clone -background black -shadow 80x3+5+5 \) +swap -background none -layers merge +repage $FILENAME 
+    maim -u -m 3 -s $FILENAME && convert $FILENAME \( +clone -background black -shadow 80x3+5+5 \) +swap -background none -layers merge +repage $FILENAME && convert $FILENAME -bordercolor white -border 10 $FILENAME 
     if [[ "$?" = "0" ]]; then
         notify-send "Screenshot" --urgency low -i $PHOTO_ICON_PATH
     fi
@@ -39,6 +39,6 @@ elif [[ "$1" = "-e" ]]; then
     cd $SCREENSHOTS_DIR ; gimp $(ls -t | head -n1) & notify-send 'Opening last screenshot with GIMP' --urgency low -i ~/.icons/oomox-only_icons/categories/scalable/applications-painting.svg
 else
     # Full screenshot
-    maim -u -m 3 $FILENAME && convert $FILENAME -bordercolor white -border 10 $FILENAME && convert $FILENAME  \( +clone -background black -shadow 80x3+10+10 \) +swap -background none -layers merge +repage $FILENAME 
+    maim -u -m 3 $FILENAME && convert $FILENAME  \( +clone -background black -shadow 80x3+10+10 \) +swap -background none -layers merge +repage $FILENAME && convert $FILENAME -bordercolor white -border 10 $FILENAME 
     notify-send "Screenshot" --urgency low -i $PHOTO_ICON_PATH
 fi

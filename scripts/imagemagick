@@ -1,2 +1,2 @@
 #!/bin/bash
-display
+/usr/bin/display

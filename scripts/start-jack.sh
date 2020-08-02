@@ -20,5 +20,5 @@ jack_control dps period 1024
 pacmd unload-module module-udev-detect
 sleep 3
 pacmd set-default-sink jack_out
-carla /home/damez/Documents/carla/fixed.carxp -n
+carla /home/damez/Documents/carla/test.carxp -n
 echo "STARTED AT $(date)" >> /home/damez/.jack-status

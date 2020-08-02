@@ -1,7 +1,7 @@
 #/bin/bash
 
-DMENU='dmenu -fn 'TerminessTTF-9' -i -l 10 -x 350 -w 700 -y 250 -nb #000000 -nf #999999 -sb #FFFFFF -sf #31658C'
-choice=$(echo -e "calf\nxfceterm\nkrita\ntodo\nemacs\nconkyfetch\nmlterm\nxtermsixel\nterminator\nkitty\ntermite\nalacritty\nidm\ndeepchallenge\nayudark\nayumirage\nayulight\ngruvboxdark\ngruvboxlight\ndarktheme\nlighttheme\nhitamputih\nputihhitam\nmerahputih\nputihmerah\ndarkdefault\nlightdefault\nescape\nkillmpg123\nalarm\naudacious\nsterminal\nlibreoffice\ngimp\nlogoutdwm\nrefreshdwm\ncolor\ncarla\njackstart\njackstop\nwebcam\nclipdel\nytop\nhtop\nweb\nmkvtool\nmixxx\nkillmixxx\nkillmpv\nmenu\ncatia\nxp\nkeyboard\nmousepad\nwide\nnormal\nlock\nlogout\nviter\nnetwork\nreboot\nshutdown\nsuspend\nterminal\nkonsol\nrefresh\nlist\nfilemanager\nplay\naria\nwallpaperfill\nwallpaperscale\ncalc\ntypora\ntag\ngammy\ntouchpad\nconvert\nfile\nscriptedit\nbuku\nrecord\nstop\nmonitor\nkill\nvim\nsteam\ntvs\npron\nvideo\ndrawing\nfceux\nkalkulator\ntelegram\nqutebrowser\ncadence\nolive\nfilm\npavmixer\npavucontrol\nmute\nvolmax\nvolhalf\nnes\nsnes\nbright30\nbright50\nbright100\nplayer\nmusic\npause\nstoprec\nnext\nprev\nminimize\nmaximize\nfullscreen\nmpvcontrol\nmpvcontrolnext\nmpvcontrolprev\nmpvplaylist\nclose\nscreenshotshadowborder\nscreenshotshadowborderarea\nscreenshotshadowborderdelay\nscreenshotsimple\nscreenshotsimplearea\nscreenshotsimpledelay\nscreenshot\nscreenshotarea\nscreenshotdelay\nyoutube\ncompton\nxeyes\nvokoscreen\nudiskie" | $DMENU)
+DMENU='dmenu -fn 'TerminessTTF-10' -i -l 10 -x 350 -w 700 -y 250'
+choice=$(echo -e "calf\npywal\nemoji\nimagemagick\nxfceterm\nkrita\ntodo\nemacs\nconkyfetch\nmlterm\nxtermsixel\nterminator\nkitty\ntermite\nalacritty\nidm\ndeepchallenge\nayudark\nayumirage\nayulight\ngruvboxdark\ngruvboxlight\ndarktheme\nlighttheme\nhitamputih\nputihhitam\nmerahputih\nputihmerah\ndarkdefault\nlightdefault\nescape\nkillmpg123\nalarm\naudacious\nsterminal\nlibreoffice\ngimp\nlogoutdwm\nrefreshdwm\ncolor\ncarla\njackstart\njackstop\nwebcam\nclipdel\nytop\nhtop\nweb\nmkvtool\nmixxx\nkillmixxx\nkillmpv\nmenu\ncatia\nxp\nkeyboard\nmousepad\nwide\nnormal\nlock\nlogout\nviter\nnetwork\nreboot\nshutdown\nsuspend\nterminal\nkonsol\nrefresh\nlist\nfilemanager\nplay\naria\nwallpaperfill\nwallpaperscale\ncalc\ntypora\ntag\ngammy\ntouchpad\nconvert\nfile\nscriptedit\nbuku\nrecord\nstop\nmonitor\nkill\nvim\nsteam\ntvs\npron\nvideo\ndrawing\nfceux\nkalkulator\ntelegram\nqutebrowser\ncadence\nolive\nfilm\npavmixer\npavucontrol\nmute\nvolmax\nvolhalf\nnes\nsnes\nbright30\nbright50\nbright100\nplayer\nmusic\npause\nstoprec\nnext\nprev\nminimize\nmaximize\nfullscreen\nmpvcontrol\nmpvcontrolnext\nmpvcontrolprev\nmpvplaylist\nclose\nscreenshotshadowborder\nscreenshotshadowborderarea\nscreenshotshadowborderdelay\nscreenshotsimple\nscreenshotsimplearea\nscreenshotsimpledelay\nscreenshot\nscreenshotarea\nscreenshotdelay\nyoutube\npicom\nxeyes\nvokoscreen\nudiskie" | $DMENU)
 
 case "$choice" in
       calf) calfjackhost eq12 ! ;;
@@ -23,7 +23,10 @@ case "$choice" in
       refreshdwm) kill -HUP $(pidof -s dwm) ;;
       color) gcolor2 ;;
       alarm) ~/Documents/scripts/alarm ;;
+      pywal) ~/Documents/scripts/pywal ;;
       conkyfetch) ~/Documents/scripts/conkyfetch ;;
+      imagemagick) ~/Documents/scripts/imagemagick ;;
+      emoji) ~/Documents/scripts/dmenu_emoji ;;
       todo) ~/Documents/scripts/dmenu_todo ;;
       killmpg123) ~/Documents/scripts/killmpg123 ;;
       oldtheme) wal -f ~/Documents/colorscheme/hijau.txt ;;
@@ -89,7 +92,7 @@ case "$choice" in
       steam) steam ;;
       tvs)~/Documents/scripts/tvs ;;
       pron)~/Documents/scripts/sans ;;
-      video)~/Documents/scripts/mpvinfinite ;;
+      video)~/Documents/scripts/video ;;
       drawing) drawing ;;
       fceux) ~/Documents/scripts/emu ;;
       kalkulator) ~/Documents/scripts/itung ;;
@@ -131,12 +134,12 @@ case "$choice" in
       screenshotshadowborderarea) ~/Documents/scripts/screenshotshadowonly.sh -s & ;;
       screenshotshadowborderdelay) ~/Documents/scripts/scrotsshadowborder & ;;
       youtube) ~/Documents/scripts/ytplay & ;;
-      compton) ~/Documents/scripts/xcomptog & ;;
+      picom) ~/Documents/scripts/compton-toggle.sh& ;;
       vokoscreen) vokoscreen & ;;
       xeyes) xeyes -fg black & ;;
       udiskie) ~/Documents/scripts/udiskie-dmenu & ;;
       lock) betterlockscreen -l & ;;
-      network) networkmanager_dmenu  & ;;
+      network) ~/Documents/scripts/koneksi  & ;;
       logout) i3-msg exit & ;;
       reboot) exec systemctl reboot & ;;
       shutdown) exec systemctl -i poweroff & ;;

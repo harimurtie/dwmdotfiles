@@ -1,0 +1,2 @@
+#!/bin/bash
+wal -f "$(ls /home/damez/Documents/colorscheme/*  | dmenu -i -l 10 -x 190 -y 250 -w 1000)"
