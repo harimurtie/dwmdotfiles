@@ -212,8 +212,6 @@ source $ZSH/oh-my-zsh.sh
 PATH="$HOME/Documents/scripts:$PATH"
 PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH
-export SPOTIFY_USER="harimurtie"
-export SPOTIFY_PWD="Pepesikan24"
 export EDITOR=vim
 export TUIR_EDITOR=/usr/bin/vim
 export TUIR_BROWSER=/usr/bin/qutebrowser

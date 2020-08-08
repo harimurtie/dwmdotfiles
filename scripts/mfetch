@@ -3,8 +3,6 @@
 # simple - simple fetch script built on fetchutils
 # (c) Kiëd Llaentenn <kiedtl@tilde.team>
 # See the COPYING file for copyright information.
-# tanggal instalasi : $(ls -alct /|tail -1|awk '{print $7, $6,$8}')
-#     $color1 tanggal instalasi $reset  :  $(ls -alct /|tail -1|awk '{print $7, $6,$8}')
 reset=$(printf '\033[0m')
 color1=$(printf '\033[1;31m')
 format_info() {
@@ -25,6 +23,6 @@ echo "
      $color1 alokasi diska $reset      :  $(~/Documents/scripts/disk.sh)
      $color1 alokasi memori $reset     :  $(~/Documents/scripts/mem.sh)
      $color1 alokasi swap $reset       :  $(free -h | awk '/Swap/ {print $3 " " "/" " " $2}')
-     $color1 tanggal instalasi $reset  :  3 April 2019
+     $color1 tanggal instalasi $reset  :  $(ls -alct /|tail -1|awk '{print $7, $6,$8}')
 "
 
