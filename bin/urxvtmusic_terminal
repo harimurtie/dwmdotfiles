@@ -1,0 +1,2 @@
+#!/bin/bash
+urxvt -T "Music Terminal" -e ncmpcpp -c ~/.config/ncmpcpp/config_fancy

@@ -1,0 +1,3 @@
+#!/bin/bash
+termite --class music --exec ncmpcpp
+

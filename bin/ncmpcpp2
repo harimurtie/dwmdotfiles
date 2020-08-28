@@ -1,0 +1,3 @@
+#!/bin/bash
+urxvt -g 70x100 -e ncmpcpp -c ~/config/.ncmpcpp/ncmpcpp-albumart
+exit 0

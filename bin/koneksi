@@ -1,0 +1,4 @@
+#!/bin/bash
+#networkmanager_dmenu -fn 'mplusNerdFont-10' -i -l 10 -x 350 -w 700 -y 250
+
+networkmanager_dmenu -fn 'mplusNerdFont-10'

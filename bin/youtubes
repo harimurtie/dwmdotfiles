@@ -1,0 +1,6 @@
+
+#!/bin/bash
+# youtube straw viewer
+# st / xst
+xst -e straw-viewer --resolution=360p --auto-caption
+
