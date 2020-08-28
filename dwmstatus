@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# For dwmstatus
+while true; do
+    xsetroot -name " $($HOME/Documents/scripts/system-uptime-pretty.sh) $(uname -r) $(light -G) $($HOME/Documents/scripts/mem.sh) $($HOME/Documents/scripts/filesystem.sh) $($HOME/Documents/scripts/volume.sh) $(date +%a) $(date +%R) $(date +%d-%b-%Y) $($HOME/Documents/scripts/bat-state.sh) $($HOME/Documents/scripts/bat-caps.sh)  "
+
+        sleep 1
+        done

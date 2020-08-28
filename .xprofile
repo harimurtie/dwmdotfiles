@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# This file runs when a DM logs you into a graphical session.
+# If you use startx/xinit like a Chad, this file will also be sourced.
+
+# Fix Gnome Apps Slow  Start due to failing services
+# Add this when you include flatpak in your system
+#dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+
+touch /tmp/awesomewm-show-dashboard
+xrdb -load ~/.Xresources
+xset r rate 300 50 &
+unclutter &
+udiskie &
+lxpolkit &
+clipmenud &
+mpd &
+xfce4-power-manager &
+wal -R &
